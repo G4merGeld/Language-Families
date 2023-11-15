@@ -8,9 +8,15 @@ public class Language { //parent class
         this.name = name;
         this.numSpeakers = numSpeakers;
         this.regionsSpoken = regionsSpoken;
-        this. wordOrder = wordOrder;
+        this.wordOrder = wordOrder;
+    }
+
+    public void getInfo(){
+        System.out.println(this.name + " is spoken by " + this.numSpeakers + " mainly in " + this.regionsSpoken + ".");
+        System.out.println("The language follows the word order: " + this.wordOrder);
     }
     public static void main(String[] args) {
-
+        //Language deutsch = new Language("Deutsch", 1000, "Schweiz", "SVO");
+        //deutsch.getInfo();
     }
 }
